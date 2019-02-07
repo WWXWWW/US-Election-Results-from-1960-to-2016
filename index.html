@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - US Election Visualization</title>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+        h1{
+            color: black;
+            font-family: verdana;
+            font-size: 250%;
+        }
+        
+        h2{
+            position: absolute;
+            left: 940px;
+            top: 200px;
+            font-size: 90%;
+        }
+        span{
+            position: absolute;
+            left: 940px;
+            top: 240px;
+            font-size: 14px;
+        }
+        body{
+            position: absolute;
+        }
+     
+        div.tooltip {
+            position: absolute;
+            text-align: left;
+            width: 250px;
+            height: 100px;
+            border: 1px;
+            border-radius: 8px;
+            padding: 10px;
+            font: 10px sans-serif;
+            background: white;
+        }
+    </style>
+</head>
+   
+    <body>
+        <h1>US Presidential Elections from 1940 to 2016</h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+    <div id="year-chart" class="view">
+        <script type="application/javascript" src="public/js/yearChart.js">
+        </script>                        
+    </div>
+        
+    <div id = "shiftChart" class = "view">
+        <h2>Brush selection is: </h2>
+        <span id="stateList"></span>
+    </div>
+
+    <div id = "electoral-vote" class = "view">
+        <script type="application/javascript" src="public/js/electoralVoteChart.js"></script>
+    </div>
+
+
+    <div id = "votes-percentage" class = "view">
+            <script type="application/javascript" src="public/js/votePercentageChart.js"></script>
+    </div>
+
+    <div id = "votes-percentage" class = "view">
+            <script type="application/javascript" src="public/js/colorCode.js"></script>
+    </div>
+
+    <div id = "tileChart" class = "view">
+        <script type="application/javascript" src="public/js/tileChart.js"></script>
+    <div id = "tiles" class = "view"></div>
+        
+    </div>
+    </body>
+</html>
